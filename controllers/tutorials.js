@@ -74,7 +74,6 @@ const getTutorialsById = async (req, res) => {
 const createTutorial = async (req, res) => {
   try {
     const dataBody = req.body;
-    console.log(dataBody, "dataBody");
     data.push(dataBody);
     res.status(200).json(req.body);
   } catch (error) {
